@@ -57,7 +57,7 @@ if (form) {
     );
 
     // Для практичної: можна вказати умовну пошту, наприклад info@rmk.ua
-    const email = "info@example.com";
+    const email = "timapargamin@gmail.com";
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
   });
 }
