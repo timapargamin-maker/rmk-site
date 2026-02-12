@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Каталог — ПрАТ «Руськополянський меблевий комбінат»</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__logo">RMK</span>
+        <span class="brand__text">
+          <strong>ПрАТ «Руськополянський меблевий комбінат»</strong>
+          <small>Каталог продукції</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Головна</a>
+        <a class="nav__link is-active" href="catalog.html">Каталог</a>
+        <a class="nav__link" href="services.html">Послуги</a>
+        <a class="nav__link" href="contacts.html">Контакти</a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm" href="contacts.html#form">Заявка</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h1>Каталог продукції</h1>
+        <p class="muted">Нижче — приклади типових позицій. Фактичні розміри/колір/фурнітура узгоджуються під замовлення.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="toolbar__group">
+          <button class="chipbtn is-active" data-filter="all">Усі</button>
+          <button class="chipbtn" data-filter="kitchen">Кухні</button>
+          <button class="chipbtn" data-filter="wardrobe">Шафи/гардеробні</button>
+          <button class="chipbtn" data-filter="bedroom">Спальня</button>
+          <button class="chipbtn" data-filter="hall">Передпокій</button>
+          <button class="chipbtn" data-filter="office">Офіс</button>
+          <button class="chipbtn" data-filter="commercial">Заклади</button>
+        </div>
+        <input class="search" id="searchInput" placeholder="Пошук (наприклад: шафа, стіл, кухня)..." />
+      </div>
+
+      <div class="grid grid--3" id="catalogGrid">
+        <!-- Kitchens -->
+        <article class="product" data-cat="kitchen" id="kitchen" data-name="Кухня пряма Модуль">
+          <div class="product__img"></div>
+          <h3>Кухня “Модуль” (пряма)</h3>
+          <p class="muted">Компоновка під розмір, варіанти фасадів, стільниці, фурнітури.</p>
+          <div class="product__meta">
+            <span class="chip">kitchen</span><span class="chip">під замовлення</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <article class="product" data-cat="kitchen" data-name="Кухня кутова Лофт">
+          <div class="product__img"></div>
+          <h3>Кухня “Лофт” (кутова)</h3>
+          <p class="muted">Кутові рішення для економії простору, зручні системи зберігання.</p>
+          <div class="product__meta">
+            <span class="chip">kitchen</span><span class="chip">фурнітура</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <!-- Wardrobes -->
+        <article class="product" data-cat="wardrobe" id="wardrobe" data-name="Шафа-купе Дзеркало">
+          <div class="product__img"></div>
+          <h3>Шафа-купе “Дзеркало”</h3>
+          <p class="muted">Двері-купе, наповнення під ваші потреби, можливі дзеркала/скло.</p>
+          <div class="product__meta">
+            <span class="chip">wardrobe</span><span class="chip">зберігання</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <article class="product" data-cat="wardrobe" data-name="Гардеробна Система">
+          <div class="product__img"></div>
+          <h3>Гардеробна “Система”</h3>
+          <p class="muted">Полиці, шухляди, штанги, кошики — комплектація індивідуальна.</p>
+          <div class="product__meta">
+            <span class="chip">wardrobe</span><span class="chip">проектування</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <!-- Bedroom -->
+        <article class="product" data-cat="bedroom" id="bedroom" data-name="Ліжко з коробом Комфорт">
+          <div class="product__img"></div>
+          <h3>Ліжко “Комфорт” (з коробом)</h3>
+          <p class="muted">Міцний каркас, зберігання під спальним місцем, варіанти оббивки.</p>
+          <div class="product__meta">
+            <span class="chip">bedroom</span><span class="chip">міцність</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <article class="product" data-cat="bedroom" data-name="Тумби та комод Лінія">
+          <div class="product__img"></div>
+          <h3>Комод + тумби “Лінія”</h3>
+          <p class="muted">Єдине стилістичне рішення для спальні, різні розміри та кольори.</p>
+          <div class="product__meta">
+            <span class="chip">bedroom</span><span class="chip">корпусні</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <!-- Hall -->
+        <article class="product" data-cat="hall" id="hall" data-name="Передпокій Практик">
+          <div class="product__img"></div>
+          <h3>Передпокій “Практик”</h3>
+          <p class="muted">Тумба для взуття, вішалки, шафка — компактно і зручно.</p>
+          <div class="product__meta">
+            <span class="chip">hall</span><span class="chip">компактно</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <!-- Office -->
+        <article class="product" data-cat="office" id="office" data-name="Офісний стіл Стандарт">
+          <div class="product__img"></div>
+          <h3>Офісний стіл “Стандарт”</h3>
+          <p class="muted">Робочі столи різних розмірів, кабель-менеджмент, тумби.</p>
+          <div class="product__meta">
+            <span class="chip">office</span><span class="chip">B2B</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <article class="product" data-cat="office" data-name="Рецепція Ресепшн">
+          <div class="product__img"></div>
+          <h3>Рецепція / ресепшн</h3>
+          <p class="muted">Під бренд та приміщення: ніші, підсвітка, панелі, тумби.</p>
+          <div class="product__meta">
+            <span class="chip">office</span><span class="chip">індивідуально</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+
+        <!-- Commercial -->
+        <article class="product" data-cat="commercial" id="commercial" data-name="Меблі для кафе">
+          <div class="product__img"></div>
+          <h3>Меблі для кафе/закладів</h3>
+          <p class="muted">Столи, лави, стійки — з акцентом на зносостійкість.</p>
+          <div class="product__meta">
+            <span class="chip">commercial</span><span class="chip">міцні</span>
+          </div>
+          <a class="btn btn--ghost btn--block" href="contacts.html#form">Запитати ціну</a>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>Примітка:</strong> це навчальний каталог-приклад. Для реального виробництва список позицій можна доповнити.
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> ПрАТ «Руськополянський меблевий комбінат».</small>
+    </div>
+  </footer>
+</body>
+</html>

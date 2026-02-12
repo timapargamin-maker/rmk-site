@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакти — ПрАТ «Руськополянський меблевий комбінат»</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__logo">RMK</span>
+        <span class="brand__text">
+          <strong>ПрАТ «Руськополянський меблевий комбінат»</strong>
+          <small>Контакти та форма заявки</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Головна</a>
+        <a class="nav__link" href="catalog.html">Каталог</a>
+        <a class="nav__link" href="services.html">Послуги</a>
+        <a class="nav__link is-active" href="contacts.html">Контакти</a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm" href="#form">Заявка</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section__head">
+        <h1>Контакти</h1>
+        <p class="muted">Зателефонуйте або залиште заявку — ми зв’яжемося та уточнимо деталі.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <h3>Реквізити</h3>
+          <div class="kv">
+            <div><span>Організація:</span><strong> ПрАТ «Руськополянський меблевий комбінат»</strong></div>
+            <div><span>Телефон:</span> <a href="tel:+380472344606"><strong>(0472) 34-46-06</strong></a></div>
+            <div><span>Адреса:</span> <strong>вул. Чигирина 111, с. Руська Поляна, Черкаська обл.</strong></div>
+          </div>
+          <p class="muted" style="margin-top:10px;">
+            (Для практичної роботи можна додати умовний графік роботи та пошту.)
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Карта</h3>
+          <div class="map">
+            <iframe
+              title="map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB.%20%D0%A7%D0%B8%D0%B3%D0%B8%D1%80%D0%B8%D0%BD%D0%B0%20111%2C%20%D0%A0%D1%83%D1%81%D1%8C%D0%BA%D0%B0%20%D0%9F%D0%BE%D0%BB%D1%8F%D0%BD%D0%B0%2C%20%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D1%8C%D0%BA%D0%B0%20%D0%BE%D0%B1%D0%BB.&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__head" id="form" style="margin-top: 26px;">
+        <h2>Форма заявки</h2>
+        <p class="muted">Заповніть форму — ми зв’яжемося з вами (працює як лист через ваш поштовий клієнт).</p>
+      </div>
+
+      <form class="form card" id="requestForm">
+        <div class="grid grid--2">
+          <label class="field">
+            <span>Ваше ім’я *</span>
+            <input name="name" required placeholder="Наприклад: Тимур" />
+          </label>
+
+          <label class="field">
+            <span>Телефон *</span>
+            <input name="phone" required placeholder="+380..." />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Що потрібно виготовити? *</span>
+          <select name="type" required>
+            <option value="">Оберіть варіант</option>
+            <option>Кухня</option>
+            <option>Шафа-купе / гардеробна</option>
+            <option>Меблі для спальні</option>
+            <option>Передпокій</option>
+            <option>Офісні меблі</option>
+            <option>Меблі для закладу</option>
+            <option>Інше / індивідуальний проєкт</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Коментар (розміри, колір, побажання)</span>
+          <textarea name="comment" rows="4" placeholder="Наприклад: шафа-купе 2000×2400, білий + дуб, дзеркальні двері"></textarea>
+        </label>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Надіслати заявку</button>
+          <a class="btn btn--ghost" href="tel:+380472344606">Подзвонити</a>
+        </div>
+
+        <p class="muted" style="margin-top:10px;">
+          Примітка: для повністю “онлайн” відправки без поштового клієнта можна підключити Formspree/Netlify Forms.
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> ПрАТ «Руськополянський меблевий комбінат».</small>
+    </div>
+  </footer>
+</body>
+</html>
